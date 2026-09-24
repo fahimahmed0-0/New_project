@@ -1,0 +1,51 @@
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: var(--chart-height);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-4);
+  box-shadow: var(--inner-glow);
+}
+
+/* Chart Tooltip custom styles (applied via Chart.js config later) */
+.chart-tooltip {
+  background: var(--glass-bg-solid);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--white-10);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-3);
+  color: var(--text-primary);
+  pointer-events: none;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-md);
+}
+
+/* Badges / Status Indicators */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-1) var(--spacing-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-up {
+  background-color: rgba(6, 214, 160, 0.15);
+  color: var(--accent-secondary);
+}
+
+.status-flat {
+  background-color: rgba(255, 184, 77, 0.15);
+  color: var(--accent-warning);
+}
+
+.status-down {
+  background-color: rgba(255, 107, 107, 0.15);
+  color: var(--accent-danger);
+}
